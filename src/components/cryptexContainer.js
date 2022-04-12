@@ -44,6 +44,7 @@ const CryptexContainer = ({ guessLetters, setGuessLetters }) => {
                 {[0, 1, 2, 3, 4].map((current) => {
                     return (
                         <Scroller
+                            key={current}
                             index={current}
                             setGuessLettersState={setGuessLetters}
                             guessLetters={guessLetters}
